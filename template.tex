@@ -1,0 +1,43 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+\begin{document}
+
+
+\pdfinfo{
+    /Title (Writing Your Oxy CS Comps Paper in LaTeX)
+    /Author (Xintai Ao)
+}
+
+\title{COMPS Project Literature Review}
+
+\author{Xintai Ao}
+\affiliation{Occidental College}
+\email{xao@oxy.edu}
+\maketitle
+
+\section{Problem Context}
+\label{sec:Problem Context}
+
+For my senior comps project, I want build an app that can help consumers compare the prices of different food delivery apps such as Uber Eats, Postmates, Grubhub, and DoorDash. The goal is to build an app that would eliminate the need to check multiple delivery apps just to compare the food and delivery prices to find the cheapest option. The targeted demographic for this project is people that have lower incomes or people that have general need to save money when ordering food, such as students in high school and college. In this app, the interface would first display a page in which the user would select the types of food they would prefer (Mexican, Chinese, American, etc.) and the price range of what they’re willing to spend on food, delivery fees, and taxes all together. After this and other information such as their delivery address and payment information are added by the user, the interface would then display a map of their surrounding area with nearby restaurants that could deliver the type of food they wanted within their specific price range. After a specific restaurant is selected by the user, the interface would allow the user to select the menu items they want. Then, the interface would display a list of the different delivery services available for that specific restaurant ordered from cheapest to most expensive. Promos and special time offers for each delivery service would also be taken into consideration if possible. The user would then pay and order through the app
+
+Currently, there are only a few other apps similar to what I want to do with my comps project app. The apps are Yelp, Mealme, and Foodboss. Yelp is a very popular app that has a map interface that displays nearby restaurants, which is similar to what I want to do with the interface in my app. The app’s main priority is to show the rating of restaurants and the reviews of their food and services. However, yelp does not compare food or delivery prices of different restaurants. Mealme is the most similar to what I want to do in that it displays the prices points of specific food items from nearby restaurants. The user can also adjust their price range in order to find the cheapest options that fit within their criteria. This app is most similar to what I want to do for the project. However, though the app does compare different delivery services and their prices, they do display the names of the different services. Also, there is a problem with the delivery service programing in that it usually takes an abnormally long time for deliveries to complete. Finally, Foodboss is essentially the Kayak for food delivery services, in that it compares the delivery prices of nearby restaurants but it does not allow the user to order in app. Rather, the user is redirected the the delivery service app that has the cheapest delivery option.
+
+\section{Technical Background}
+\label{sec:Technical Nackground}
+
+For my approach, I want to learn how to create an app in which the interface displays an interactable map that shows nearby restaurants that fit into the user’s price range. An app that has an interface most similar to this idea is \url{ https://www.yelp.com/}. \url{ https://www.mealme.ai/} has a price comparison mechanic that I also want to emulate within my own app. In order to do this, I would need to use a web stack, which is a collection of software/technologies that are used to build a web application. More specifically, I could use LAMP stack, who’s components are Linux (OS), Apache (Webserver), MySQL (Data persistence), and PHP (Programming Language). LAMP was used to develop apps such as Yelp and has endless modules, libraries, and add-ons that can help adapt my app to whatever I need. However, it is Linux based and that is a language I plan on learning. MySQL is a very reliable and scalable solution which I am currently learning in my Databases course. PHP is also very fast and integrates well with the rest of the stack. LAMP is one of the best solutions I can find so far to help develop this app idea, as LAMP can help with a lot of server-side code/tasks, which validates submitted data and requests, using databases to store and retrieve data and send the correct data to the client as required. 
+In most delivery apps, such as Uber eats, the service fee is calculated by finding a specific percentage of a customer’s order and the delivery fee is scaled to the distance of the restaurant to the address of the customer. The Uber Eats delivery fee is also affected by the density of the orders in an area and the number of delivery people available, which can be affected by outside factors such as weather, traffic, and other traveling conditions. The algorithms implemented into Uber Eats is something I would also want to implement into my own app.
+
+\section{Prior Work}
+\label{sec:Prior Work}
+
+Some prior work that has been to solve similar issues are the apps “Mealme” (\url{ https://www.mealme.ai/}) and “FoodBoss” (\url { https://www.foodboss.com/?gclid=Cj0KCQiA95aRBhCsARIsAC2xvfwhA8caCOozwqH19_4qnicUs4HjKU7CYL9I8tYyDTtEaanZAYE-2j0aAo1REALw_wcB}). As discussed earlier, Mealme is an app most similar to what I want my project to be. The difference is that it uses quote unquote “A.I.” to find the best possible deals for consumers. However, the app’s interface is not fluid and does not display the specific delivery services utilized, leaving room for errors such as long delivery times, missing orders, and inaccurate delivery fee calculations. FoodBoss is an app not as popular as Mealme and Yelp as its functionality is actually more of a hurdle to users rather than a time and money saver, which is the app’s original purpose. The use of FoodBoss requires the user to basically open a different app and type in their food preferences and address and then be redirected to a separate, which is almost as inefficient as checking the delivery prices in every individual delivery app on one’s phone.
+
+\end{document}
